@@ -9,13 +9,13 @@ This is the Repository made for uploading all solutions and writeups of challeng
 <br>number = The number of the writeup of that particular problem(Eg. 1st writeup name may be 1-PranavSarda.md, and so on)
 <br>author = Name of author who added the writeup
 
-## Setting up a Problem Folder (Only for CyberCell Members) :- (Refer <a href="https://github.com/CybercellVIIT/vishwaCTF-Writeups21/tree/main/Flag%20Format">Flag Format</a> folder for Basic Setup)
+## Setting up a Problem Folder (Only for CyberCell Members) :- (Refer <a href="https://github.com/CybercellVIIT/vishwaCTF21-Writeups/tree/main/Flag%20Format">Flag Format</a> folder for Basic Setup)
 1. In the README.md of the problem, add Title, Category, Description, Hints, Files, Points, Solves(At Event's end i.e. Public Solves), & Flag(s) of the Problem.
 2. Upload the required Files(if any) in the same Problem Folder.
 3. You/Other Non-CyberCell Players can write any writeups to the problems later on and submit Pull Requests for the same.
 
 ## Creating Writeups (Everyone) :-
-1. Follow the naming convention given in <a href="https://github.com/CybercellVIIT/vishwaCTF-Writeups21/blob/main/README.md#folder-structure--">Folder Structure</a> -> Point 3 and add your file.
+1. Follow the naming convention given in <a href="https://github.com/CybercellVIIT/vishwaCTF21-Writeups/blob/main/README.md#folder-structure--">Folder Structure</a> -> Point 3 and add your file.
 2. Include proper detailed explanations wherever possible and needed.
 3. Push(if CyberCell Member, PRs preferred though) OR Submit a Pull Request(if non-CyberCell Player). Instructions for both given below.
 4. You may include links to any of your social media(if you want to), at the bottom of your writeups in normal text size so that people may follow you.
