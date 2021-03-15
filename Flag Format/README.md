@@ -2,15 +2,15 @@
 
 Title : Flag format
 
-Category : Flag format
+Category : Warmup
 
-Description : Suppose this the flag text that you get -> th1s_1s_th3_fl4g
+Scoring : Static
 
-Value : 
+Points : 25
 
-Then your flag answer to enter in the challenge will be -> vishwaCTF{th1s_1s_th3_fl4g}
-
-Points : -
+Description : The Flag Format is : **vishwaCTF{}**
+The Flag for all challenges would follow this format unless **specified otherwise** in the challenge.
+The Flag for this challenge is : **vishwaCTF{welcome_to_vishwaCTF}**
 
 Flags : vishwaCTF{th1s_1s_th3_fl4g}
 
@@ -18,6 +18,4 @@ Files : None
 
 Hints : None
 
-Requirements : None
-
-Solves : -
+Solves : 368
