@@ -1,4 +1,4 @@
-## Magician
+## Git Up and Dance
 
 Author : <a href="https://github.com/skohan">Sohan</a>
 
