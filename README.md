@@ -3,9 +3,10 @@ Github Repository for Writeups of vishwaCTF'21 Challenges<br>
 This is the Repository made for uploading all solutions and writeups of challenges in vishwaCTF'21 for public reference.Everyone is invited to make their contributions here after reading the instructions below. (Note: Instructions are a bit different from the vishwaCTF-Mini'21 writeup's, so all CyberCell members also should read them once.)
 
 ## Folder Structure :-
-1. Each Problem will have its own folder by the problem name.
-2. Writeups will be added to these folders by anyone in the form of Markdown(.md) files.
-3. Name of the writeup files should be number-author_name.md
+1. Each Challenge Category will have its own folder.
+2. Each Problem will have its own folder by the problem name inside the category folder.
+3. Writeups will be added to these folders by anyone in the form of Markdown(.md) files.
+4. Name of the writeup files should be number-author_name.md
 <br>number = The number of the writeup of that particular problem(Eg. 1st writeup name may be 1-PranavSarda.md, and so on)
 <br>author = Name of author who added the writeup
 
