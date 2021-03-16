@@ -1,5 +1,7 @@
 ## Flag format
 
+Author : <a href="https://github.com/PranavSarda">Pranav Sarda</a>
+
 Title : Flag format
 
 Category : Warmup
@@ -19,5 +21,3 @@ Files : None
 Hints : None
 
 Solves : 368
-
-Author : <a href="https://github.com/PranavSarda">Pranav Sarda</a>

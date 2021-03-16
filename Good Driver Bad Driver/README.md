@@ -1,5 +1,7 @@
 ## Good Driver Bad Driver
 
+Author : <a href="http://www.antrixacademy.com/">Antrix Academy of Data Science</a>
+
 Title : Good Driver Bad Driver
 
 Category : General
@@ -22,5 +24,3 @@ Files : drivertrainlabeled.csv, drivertestunlabeled.csv
 Hints : None
 
 Solves : 66
-
-Author : <a href="http://www.antrixacademy.com/">Antrix Academy of Data Science</a>

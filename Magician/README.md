@@ -1,5 +1,7 @@
 ## Magician
 
+Author : <a href="https://github.com/PranavSarda">Pranav Sarda</a>
+
 Title : Magician
 
 Category : General
@@ -19,5 +21,3 @@ Files : None
 Hints : None
 
 Solves : 55
-
-Author : <a href="https://github.com/PranavSarda">Pranav Sarda</a>
