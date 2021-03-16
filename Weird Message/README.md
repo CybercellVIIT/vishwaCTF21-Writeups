@@ -16,6 +16,6 @@ Files : message.txt
 
 Hints : None
 
-Solves : 368
+Solves : 62
 
 Author : <a href="https://github.com/Equinox21040">Vivek Shinde</a>
