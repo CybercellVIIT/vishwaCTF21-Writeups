@@ -1,6 +1,6 @@
 ## Rotations
 
-Author: n00b_3lli0t
+Author: <a href="https://github.com/anivedh555">anivedh555</a>
 
 Title : Rotations	
 
