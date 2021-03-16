@@ -12,9 +12,9 @@ This is the Repository made for uploading all solutions and writeups of challeng
 
 ## Folder Structure for Merged Writeups :-
 1. Writeups will be added to the 'Merged Writeups' Folder by anyone in the form of the following filetypes(.pdf, .doc, .docx, .txt, .md).
-4. Name of the writeup files should be <Team Name/Username>.<file-extension>
+2. Name of the writeup files should be <number>-<Team Name/Username>.<file-extension>
 <br>number = The number of the writeup of that particular problem(Eg. 1st writeup name may be 1-Team1.md, and so on)
-<br>author = Name of author who added the writeup
+<br>Team Name/Username = Name of Team/Player who added the writeup.
 
 ## Setting up a Problem Folder (Only for CyberCell Members) :- (Refer <a href="https://github.com/CybercellVIIT/vishwaCTF21-Writeups/tree/main/Flag%20Format">Flag Format</a> folder for Basic Setup)
 1. In the README.md of the problem, add Title, Category, Description, Hints, Files, Points, Solves(At Event's end i.e. Public Solves), & Flag(s) of the Problem.
