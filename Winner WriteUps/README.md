@@ -1,4 +1,4 @@
-# Winner Writeups
+# Winner WriteUps
 
 Hearty Congratulations from CyberCell, VIIT to all the winners. Also, Thank you for submitting your writeups. 
 
