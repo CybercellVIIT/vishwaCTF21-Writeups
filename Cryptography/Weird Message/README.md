@@ -1,4 +1,4 @@
-## Flag format
+## Weird Message
 
 Author : <a href="https://github.com/Equinox21040">Vivek Shinde</a>
 
@@ -18,4 +18,4 @@ Files : message.txt
 
 Hints : None
 
-Solves : 62
+Solves : 25
