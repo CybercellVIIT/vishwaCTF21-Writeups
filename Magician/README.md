@@ -20,4 +20,4 @@ Files : None
 
 Hints : None
 
-Solves : 55
+Solves : 45

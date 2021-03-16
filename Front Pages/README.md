@@ -19,4 +19,4 @@ Files : None
 
 Hints : None
 
-Solves : 65
+Solves : 40

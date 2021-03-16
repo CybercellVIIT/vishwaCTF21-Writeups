@@ -23,4 +23,4 @@ Files : drivertrainlabeled.csv, drivertestunlabeled.csv
 
 Hints : None
 
-Solves : 66
+Solves : 31

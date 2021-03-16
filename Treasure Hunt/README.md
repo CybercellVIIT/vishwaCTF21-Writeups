@@ -25,4 +25,4 @@ Files : None
 
 Hints : None
 
-Solves : 54
+Solves : 130
