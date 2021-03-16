@@ -1,0 +1,304 @@
+Team : warlock_rootx
+
+WEB:
+
+Challenge Name:  bot not not bot 
+
+This challenge we ll get 1k page just use burp to get the all the char of flag and re-arrange  it.
+
+Challenge Name: Redeeem
+
+We just need to change the cookie highScore=100000000000000000000000000000000 to get the flag.
+
+Challenge Name: My Awesome Youtube recommendation 
+
+its just a ssti {{config}} we ll get the flag.
+
+
+## Chall Name: Is JS Necessary
+
+used 10 as the answer and it alerted the flag.
+
+Challenge: Inspect the un-Inspected 
+
+Main site soure-code we got the 3part of the flag
+
+## Chall Name: UwU
+
+used `suzukisuzuki_harumiya_harumiya` to get the flag
+
+Challenge Name:  Time is an illusion 
+
+
+we need to leak the key from the server.
+
+import requests
+from time import time
+from string import ascii_lowercase, ascii_uppercase, digits
+
+dic = ascii_lowercase + ascii_uppercase + digits
+flag = ['x']*5
+'''
+flag[0] = 'K'
+flag[1] = 'u'
+flag[2] = 'K'
+flag[3] = 'a'
+flag[4] = '9'
+'''
+
+for i in range(5):
+    for x in dic:
+        flag[i] = x #chr(j)
+        t1 = time()
+        conn = requests.get('https://time-is-an-illusion.vishwactf.com/handle.php?key='+''.join(flag))
+        r1 = conn.text
+        t2 = time()
+        print(t2 - t1)
+        #print(x)
+        if t2 - t1 > 1*(i+1):
+            pass1 = time()
+            conn = requests.get('https://time-is-an-illusion.vishwactf.com/handle.php?key='+''.join(flag))
+            r1 = conn.text
+            pass2 = time()
+            if pass2 - pass1 > 1*(i+1):
+                print(''.join(flag))
+                break
+
+
+
+Cryptography:
+
+ Challenge Name:Mosha
+
+ we got the Mosha_font profile in instagram there we got the decoder image.
+
+
+## Chall Name: From the FUTURE
+
+Futurama alphabet. decoded it
+
+Challenge Name:  Please help!! 
+
+we used this https://github.com/mahdavipanah/hamcode tool to decode and got the flag
+
+ Challenge Name: Weird Message 
+
+from PIL import Image
+
+bins = open('message.txt').read().strip()
+bins = map(int, bins)
+
+img = Image.new('1', (613, 83))
+img.putdata(bins)
+img.save('flag.png')
+
+then we guessd the flag.
+
+Forensics:
+
+Challenge name: Barcode Scanner 
+
+stegsolve to get the all barcode and zbarimg got the flag.
+
+Challenge Name:Bubblegum
+
+spectgrom we got the 0.55 -1.07 then we found the youtube (https://www.youtube.com/watch?v=5x441jo1-sg
+)about that song then we get 0.55 -1.07  lyric.
+
+Challenge Name: Peace
+
+decoded morse
+
+Challenge Name:Memories 
+
+we found its a  Xiao Steganography and we used the password occlumency then we need another passs itsa iamalegilimen we got the flag
+
+Challenge Name:recovery
+
+get the LM hash using mimikatz and use CUPP in interactive mode to generate the wordlist and john to crack it.
+
+we knw the name and format sayerhs_093 then used tthe hashcat mask atk
+
+
+Challenge Name:Sherlock
+
+zsteg -a decode.jpg | grep -i ctf  got the flag.
+
+
+Challenge Name:Comments
+
+just 7z x docx then grep Comments we ll get the flag
+
+Challenge Name: Dancing LEDs 
+
+the video we can see the leds i use 0's and 1's then decode it after that base58 to get the flag
+
+## Challenge Name: Remember
+
+Used regripper to get the keys from registry and saw the last PWD reset key.
+
+
+General:
+Challenge Name: Prison Break 
+
+this is just have to play the game and win.
+
+Challenge Name: Git Up and Dance 
+
+Just git extractor and then grep ctf we ll get the flag.
+
+Challenge Name:A typical day at work
+
+just a quip quip got the flag
+
+Challenge Name: Find the room 
+
+https://www.google.com/maps/place/7JCMFV5M%2BVH/@18.4597059,73.8839414,21z/data=!4m13!1m7!3m6!1s0x0:0x0!2s7JCMFV5M%2BVH!3b1!8m2!3d18.4596875!4d73.8839375!3m4!1s0x0:0x0!8m2!3d18.4596875!4d73.8839375
+
+after a few min we found the dean's office A 005 but this is not the flag then we tried A 003 
+
+Challenge Name:Treasure Hunt
+
+insta,linkedin,twitter we ll get the 3 part of the flag vishwaCTF{w31c0m3_t0_v1shw4ctf}
+
+
+Challenge Name: Front Pages 
+
+Reddit we ll get the flag and the vigenere cipher with key vishwaCTF.
+
+Challenge Name:Secret Service 
+
+we got the 3 prime(3301 1019 911) number and multiplied  3064348009 got the flag
+
+Challenge Name:findthepass
+first we get the hash from sta file we used string but that is just a deafult hash the we just guess the `password` its worked
+
+Challenge Name:Magician
+
+every 20 min server ll sent the flag char we used automation for that.
+
+import requests
+import time
+flag="vishwaCTF{cr0n"
+while True:
+        x=open('./dddd','w+')
+        p=requests.get('https://magician.vishwactf.com/').text[59]
+        flag+=p
+        print flag
+        x.write(flag)
+        x.close()
+        time.sleep(10)
+
+Challenge Name: BiGh Issue 
+
+github issue(https://github.com/CybercellVIIT/vishwaCTFWebsite21/issues/28) we got that page their we got the flag..
+
+
+Challenge Name: Good driver bad driver
+
+Predicted using GNB
+```py
+from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import confusion_matrix 
+from sklearn.model_selection import train_test_split 
+import numpy as np
+import pandas as pd  
+
+train = pd.read_csv("drivertrainlabeled.csv")
+test = pd.read_csv("drivertestunlabeled.csv") 
+  
+# le = LabelEncoder();
+# train['Driving_Class'] = le.fit_transform(train['Driving_Class'])
+train = train.drop(['Driver_ID'],axis=1)
+
+train[['Driving_Class']] = train[['Driving_Class']].replace(to_replace={'Good':0,'Average':1,'Bad':2})
+    
+# print(test.head())
+
+print(train.head())
+
+data = train.values
+data_x = data[:,0:2]
+data_y = data[:,2]
+
+test_data = test.values
+# print(test_data)
+# print(data_x)
+# print(data_y)
+
+# # dividing X, y into train and test data 
+X_train, X_test, y_train, y_test = train_test_split(data_x, data_y, test_size=0.3) 
+  
+# # training a Naive Bayes classifier 
+from sklearn.naive_bayes import GaussianNB 
+gnb = GaussianNB().fit(X_train, y_train) 
+gnb_predictions = gnb.predict(X_test) 
+  
+# # accuracy on X_test 
+accuracy = gnb.score(X_test, y_test) 
+print(accuracy) 
+  
+final_p = gnb.predict(test_data)
+# print(final_p)
+
+ans = ""
+for x in final_p:
+    ans = (ans+str(int(x)))
+    
+print(ans)
+print(len(ans))```
+
+
+Reverse Engineering:
+
+## Chall Name: Apollo 11
+
+extracted the ISO using winrar and got hidden archive and then flag
+
+## Chall Name: Rotations
+
+had the flag rot-13'ed 
+
+Chall Name:flowrev
+
+I have attached my analysis images:
+
+https://cdn.discordapp.com/attachments/559015505244061697/820856523462672444/pasted_image_0.png
+https://cdn.discordapp.com/attachments/559015505244061697/820856522392731648/pasted_image_1.png
+
+Chall Name:give it to get it
+
+https://cdn.discordapp.com/attachments/559015505244061697/820857079954538526/unnamed1.png
+
+program is converting hex digest into flag. to get the real flag, encode the iven flag as hex
+
+https://cdn.discordapp.com/attachments/559015505244061697/820857077916368916/unnamed2.png
+
+vishwaCTF{7669736877614354467b663134675f31735f57683372335f5468335f68336152745f4c3145737d}
+
+
+## Chall Name: Misleading Steps
+
+Opened the binary in IDA and got the flag
+
+Challenge Name:Facile
+
+binwalk and strings FOLDER_ITEM | grep -i ctf got the flag
+
+## Chall Name: Suisse
+
+got the values from IDA and subtracted 3 from each character and got flag.
+
+
+
+Networking:
+
+Challenge Name:Invalid
+
+when we search error in wireshark we can get the ip address
+
+
+## Chall Name: Commenting is key
+
+strings and grep flag
+

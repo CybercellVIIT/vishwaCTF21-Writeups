@@ -1,0 +1,56 @@
+Team name: c0d3_h4cki05_ 
+Ranked 10th place
+
+Networking: 
+1. Commenting is the key - strings the pcap and grep "flag"
+2. Invalid - strings the pcap and search for "wrong password" we get ip 
+
+Web: 
+1. bot not not bot - Get all the Useful pages and arrange the letters according to numbers in page
+2. Redeeem - Intercept with request with burp change the value of current balance
+3. Is Js Necessary? - Disable javascript, reload site, enter value 10 and enable javascript again and get flag in pop-up
+4. UwU - check /robots, bypass preg_replace with "suzukisuzuki_harumiya_harumiya"
+5. Inspect the un-Inspected - inspect home, practice, FAQ pages of vishwactf.com
+6. My Awesome Youtube recommendation - flask SSTI vulnerability, give input {{config}}
+7. Time is an illusion - bruteforce the key with python script(KuKa9) and enter the key to get flag
+
+Cryptography:
+1. From the FUTURE - https://www.dcode.fr/futurama-alien-alphabet
+2. A typical day at work - https://www.boxentriq.com/code-breaking/cryptogram use autosolve "substitution cipher"
+3. Mosha - find instagram account mosha_font and solve from images
+4. Weird Message - prime factorize total characters of message and python script to convert it to image 0 is black and 1 is white pixel(83,613)
+
+Forensics:
+1. Barcode Scanner - scanned barcode with QR scanner 
+2. peace - crack the password of rar and decode morse audio
+3. Sherlock - zsteg
+4. Comments - binwalk docx and grep flag that is commented
+5. Bubblegum - spectrogram give 0.55-1.07, check for video in youtube https://www.youtube.com/watch?v=5x441jo1-sg&ab_channel=It4chi lyrics in given time limit is flag
+6. Remember - use regeditor and then use sam plugin to dump all sam info of user
+7. Dancing LEDs - Consider ON-1 OFF-0, convert binary to ascii then base58
+8. Memories - we use "xiao steganography tool" with password "occlumency" to extract hidden imgage, we find a phrase "who are you?" 
+              googling some harrypotter stuff about word "Legilimency" which mean memory extraction from deep layers and person who performs called as "Legilimens" flag is "iamalegilimen"
+
+General:
+1. Treasure Hunt - Got to 1st post of instagram caption and 1st post of linkedin comment and twitter tweet
+2. Prison Break - played the game in trail and error way
+3. Git Up and Dance - used Gitool to extract .git repo and searched for flag in js script
+4. Find the room - https://www.google.com/maps/@18.4596665,73.8839656,3a,15y,42.5h,95.44t/data=!3m7!1e1!3m5!1sAF1QipOlrCtXB5DCwoxPjA6tr5RLYa7vGMggM69z_yvT!2e10!3e11!7i13312!8i6656 use street view to get room number A003
+5. Front Pages -  reddit, user vishwaCTF, check comment, wayback machine, viginere cipher key vishwaCTF
+6. Magician - waited for every character and collected them
+7. BiGh Issue - vishwaCTF git repo, check issues https://github.com/CybercellVIIT/vishwaCTFWebsite21/issues/28 and check edited thread of meme
+8. findthepass - guessed the password as password
+9. Secret Service - we need 3 primes, one prime is 3301 given in description, when we checked the image with exiftool we find the image size as 1019x911 which are other two primes, multiplying all three we get "3064348009" 
+
+Reversing:
+1. Apollo 11 - strings and grep flag
+2. Rotation - open the file in IDA ,then decompile it and read the code and go through it, you will find a string and apply ROT13 for the string.
+3. mislead-open the file in IDA , in main function you will see the flag
+4. Facile - open the file in ghidra, while going through the function _check you will see the flag in assembly
+5. Give it to get it - with C++ programs we have to look at the function names and decipher what they're doing,arguments are usually sent in esi and edi, so here that was some string pointer and we were adding something to a string one by one
+6. Suisse- open the file in IDA , go through the graph view and then you will see like graph gonna divide as flag and no flag , go to func flag wou will see a word and then subtract 3 from each character present in the word using python you will get the name which you require
+
+Warmup:
+1. Discord-bot - DM bot $flag
+2. Flag format - Flag in description
+

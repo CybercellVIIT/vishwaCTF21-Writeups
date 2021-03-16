@@ -1,0 +1,271 @@
+♦→General
+
+→Treasure hunt
+Instagram has a post which tells viitgandharva ctf in comments we found flag (1/3)vishwaCTF{w31c0m3
+linked some post which is 7mon old _to_(2/3)
+in twitter on 29 aug post (3/3)v1shw4ctf}
+vishwaCTF{w31c0m3_t0_v1shw4ctf}
+
+→git up and dance
+unzip the file nd check the logs
+checked cd git\ up\ and\ dance/ | grep CTF and got a fake flag
+checking git log we found a commit
+commit acd2ccc03ddafc1c838adbb3e2d3835d7656777a
+Merge: 83237fb 161e271
+Author: Sohan <sohan@email.com>
+Date:   Wed Mar 10 23:21:23 2021 +0530
+git checkout acd2ccc03ddafc1c838adbb3e2d3835d7656777a
+grep CTF *
+grep: konga.92cb31af.mp3: binary file matches
+workspace.a4362daf.js:                        // This is not the flag vishwaCTF{d4nc3ing_4nd_gitup}
+workspace.a4362daf.js:                        // This is the flag vishwaCTF{d4nc3_4nd_giitupp}
+we got the flag
+vishwaCTF{d4nc3_4nd_giitupp}
+
+→Find the room
+there is plus code in the quection form that we can get the exact location of the collage. in google maps i saw all the images of the collages and fount 2 images in first i fount the deans ooffice and collage office are side by sire in 2nd image i got the collage office room number one number adjecent to it is the flag
+vishwaCTF{A 003}
+
+→Magician
+we waited 12 hrs and wrote every letter in order and submitted it
+vishwaCTF{cr0nj0bs_m4k3_l1f3_s1mp13}
+
+→Findthepass
+starting ios in vm we get terminal in that by exploring we foud a dir name this_is_what_you_need we need password for this going to etc dir we cn obtain a shadow file by using johntheripper we found the password to be password
+vishwaCTF{password}
+
+→Front Pages
+Reddit refered to as the internets frontpage. so looked the post here https://www.reddit.com/user/vishwaCTF/comments/
+but they said it got deleted so we looked into archives https://web.archive.org/web/20210226174949if_/https://www.reddit.com/user/vishwaCTF/comments/lt1gzm/could_this_be_the_flag_for_a_vishwactf_2021/
+got a encrypted flag vishwaCTF{0$dVl_1z_kFV3g_0a3mT0graD} this is vignere ciphere with key vishwaCTF(key tried randomly) and got the flag
+vishwaCTF{0$iNt_1s_oFT3n_0v3rL0okeD}
+
+→BiGh Issues
+is seems to be some issue with the server so went to the githut
+https://github.com/CybercellVIIT/vishwaCTFWebsite21/issues/28 in that we find a image where it is edited. whe we get into that thread we will diectly  we get the flag under image 
+vishwaCTF{bh41yy4_g1thub_0P}
+
+→Good Driver Bad Driver
+import csv
+
+with open('drivertestunlabeled.csv', newline='') as csvfile:
+    csvreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+    next(csvreader, None)
+    for row in csvreader:
+        if float(row[0]) > 100 and float(row[1]) < 30:
+            print('0', end='')
+        elif float(row[0]) > 100 and float(row[1]) > 30:
+            print('2', end='')
+        else:
+            print('1', end='')
+ we get a long binary when we submit it we get the flag as vishwaCTF{d4t4_5c13nc3_15_n3c3554ry}
+
+ →Secret service
+Here we are given an image. Then find the dimensions of that image. The dimensions must be multiplied. The 3 primes dimensions are 1019,911,3301. So by mutliplying these 3 primes we get 3064348009.
+vishwaCTF{www.3064348009.com}
+
+→Pub
+when we look through that list of movies we can one movie name is external_packages and since the challenge name was pub i searched for external_packages in pub.dev and found it’s github repo and continued searching beacause the readme said “Get your vishwaCTF flag here”. Found a lead in https://github.com/anilChouhan-sh/external_package/commit/6e2260c9fff93d396f3b62de5e010e7eca1d4453 file’s recent commit.
+it seems to be like morse code decoding those letters we go the flag
+vishwaCTF{US3FU1_F1UTT3R_P@CKAGE}
+
+♦→Cryptography
+
+→From the FUTURE
+that cipher i found on dcode.com to be Futurama and decoded it
+vishwaCTF{WEARENOTALONE}
+
+→A typical day at work
+it seems to be a substution cipher by online https://www.boxentriq.com/code-breaking/cryptogram we figured it out to be contrais on second season we thougth the flag shoulb be meaningful and gave vishwaCTF{congrats_on_second_season}
+
+→Mosha
+https://www.instagram.com/p/CMT1hi5BtyQ/ image in that file helped to solve it vishwaCTF{Y0UR34M0SH4N0W}
+
+→Weird Message
+Opened and the txt file in notepad and changed window size and zoom, till we could identify a readeable message.flag and it’s mirror image are overlapped in that file. by analysing them we got
+vishwaCTF{pr1m35_4r3_w31rd}
+
+♦→Forensics
+
+→Barcode Scanner
+try to extract the data normally didn't get angain used stegsolve and tried on performing xor could extract flag   
+┌──(mp130743㉿kali)-[~/Desktop/CTF]
+└─$ zbarimg solved.bmp
+CODE-128:5oo_3asY
+vishwaCTF{5oo_3ASy}
+
+→Peace
+used rar2john to crack the password and found to be india
+after extracting content with password we got an audio file which seems to be a morse ausio file https://morsecode.world/international/decoder/audio-decoder-adaptive.html is used to decode and found out to be 76 69 73 68 77 61 63 74 66 7B 37 68 33 79 5F 34 72 45 5F 46 30 72 33 66 65 37 31 6E 67 7D
+converting hex to ascii we get flag
+vishwactf{7h3y_4rE_F0r3fe71ng}
+
+→Sherlock
+┌──(mp130743㉿kali)-[~/Desktop/CTF]
+└─$ zsteg -a decode.jpg 
+b2,rgba,lsb,xy      .. text: ["?" repeated 14 times]
+b2,abgr,msb,xy      .. text: ["?" repeated 14 times]
+b4,abgr,msb,xy      .. file: MPEG ADTS, layer I, v2, Monaural
+b5,rgb,msb,xy       .. file: MPEG ADTS, layer II, v1, Monaural
+b5,bgr,msb,xy       .. file: MPEG ADTS, layer II, v1, Monaural
+b5,rgba,msb,xy      .. file: MPEG ADTS, layer II, v1, Monaural
+b5,abgr,lsb,xy      .. file: MPEG ADTS, layer II, v1, Monaural
+b6,rgb,msb,xy       .. file: MPEG ADTS, layer I, v2, Monaural
+b6,bgr,msb,xy       .. file: MPEG ADTS, layer I, v2, Monaural
+b6,rgba,msb,xy      .. file: MPEG ADTS, layer I, v2, Monaural
+b7,rgb,lsb,xy       .. file: , Monaural
+b7,bgr,lsb,xy       .. file: , Monaural
+b7,rgba,lsb,xy      .. file: , Monaural
+b8,r,msb,xy         .. text: ["?" repeated 14 times]
+b8,g,msb,xy         .. file: RDI Acoustic Doppler Current Profiler (ADCP)
+b8,abgr,msb,xy      .. file: ddis/ddif
+b2,r,lsb,xy,prime   .. file: AIX core file fulldump
+b1,g,lsb,yx         .. text: "vishwaCTF{@w3s0Me_sh3Rl0cK_H0m3s}"
+b3,abgr,msb,yx      .. file: AIX core file 64-bit
+b4,abgr,msb,yx      .. file: MPEG ADTS, layer I, v2, Monaural
+vishwaCTF{@w3s0Me_sh3Rl0cK_H0m3s}
+
+→Comments
+the extention is .docx bt format is .zip so changet the extension to .zip and extracted all files and then used grep to find the flag
+vishwaCTF{comm3nts_@r3_g00d}
+
+→Bubblegum
+Open the given audio file in audacity.
+Upon analysing it, we find this 0.55-1.07 which could be a hint.
+did some exploring and found out that the lyrics of 0.55-1.07 portion of this video is the flag
+vishwaCTF{oh bubble gum dear im yours forever i would never let them take your bubblegum away}
+
+→Remember
+on analysing file 2 with registry viewer and exploring all file for some time we found that some useful data through the accounts folder.
+when we see properties tab we can see the last password updated time.
+vishwaCTF{thursday_january_10_08_24_36_2013}
+
+→DancingLED
+in the given video the blinking of the light represents the binary byte, after finding all binary(00110100 01101001 01110000 01011010 01001010 01001000 01111010 01111000 00110100 00110001) we need to convert to ascii,(4ipZJHzx41) after i tried in cyberchef with every decryptor and base58 worked
+vishwaCTF{b1!nk3r}
+
+♦→Web
+
+→bot not not bot
+done it manually by visiting all the links and arranged the letters according to the numbers
+vishwaCTF{r0bot_15_t00_0P}
+
+→Is Js Necessary?
+disabled js and tried got the page
+on exploring we got Brendan took 10 days to do so we gave input 10 and again enabled java we got flag
+vishwaCTF{2ava5cr1pt_can_be_Dis@bleD}
+
+→Redeeem
+intercepting the the request with burp and change the balance to 6969 and we get the flag .Simply use Dev Tools and change current value to 6969 and click BUY.
+vishwaCTF{@DDed_T0_C@rT_}
+
+POST /handle. php HTTP/1. 1
+Host: redeeeem. vishwactf . com
+User - Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv: 86.0)
+Gecko/20100101 Firefox/86.0
+Accept :text/html, application/xhtml+xml, application/xml; q=0.9, image/webp, */*; q=0. 8
+Accept- Language: en-US, en; q=0.5
+Accept - Encoding: gzip, deflate
+Content- Type: application/x-www-form-urlencoded
+Content - Length: 14
+Origin: https://redeeeem. vishwactf . com
+Connection: close
+Referer :
+https://redeeeem. vishwactf . com/?_cf_chl_jschl_tk_=8e5afd64e38c7625819a
+3cafcdof 1023ddc5e24e- 1615787547-0-AVW4ak07y607qj 5v2M9i U3i OnH4DktsfmxZblj
+JA4bUsBmTT UDXRFRJ jw-UL_Kq5eqY Ju73vEXL76PuZ-wE3qtnvtPT qCpni OwCXSeAYX7SHdk
+agY JsInCnMsbmVGmw2_351VFr-Wg9jpcCqMog- YKFb7pZVWHmxwzmxQKKReachSKLvkyb&f
+PdCgdheobcXuQ58-LcwyZJ - FZrBf tCo090Ki RI 91M9JbEUAaVzy_kalVaVqjapaZ8CINVH3V
+aV435Dh_mMb - 8bINr6LBz8AgedEi V6AUOY_nUwCy8q99azw71 AtoZraQ6zSc_JtM_34w
+Cookie: _cfduid=d41e6828406848coe 142f5399560c473b 1615659101;
+of_clearance=4097e947c63046f a7ff 3004bbboc 1baadc13f f 87- 1615787556-0- 150;
+_ga_W955WRJ7YZ=GS1 . 1. 1615751011. 3.0. 1615751011.0; _ga=
+GA1 . 1. 12479220. 1615719282; cf_chl_prog=a15
+Upgrade- Insecure- Requests: 1
+current=6969&buy=
+
+vishwaCTF{@DDed_T0_C@rT_}
+
+→UwU
+typed robots.txt and found a directory robots. so on moving to robots dir we get php code on exploring we can understand that our input in the php_is_hard param and then run it through a regex filter which replaces the suzuki_harumiya with an empty string. by giving input as suzuki_harumiya the payload suzukisuzuki_harumiya_harumiya we get the flag
+vishwaCTF{well_this_was_a_journey}
+
+→Inspect the un-Inspected
+i found part one and part 3 in https://github.com/CybercellVIIT/vishwaCTFWebsite21/commit/a6f77ad36890b1eb006cae996cfc6db2b03f642b# part 2 was in practice tab
+vishwaCTF{EvEry_C0iN_ha$_3_s1Des}
+
+→Time is an illusion
+i got the soures and wrote a python script to solve
+import requests
+import time
+from string import digits, ascii_letters
+key = ['a' for i in range(5)] # need to start with something
+for i in range(2, 5):
+    for j in ascii_letters + digits:
+        key[i] = j
+        t1 = int(time.time_ns())
+        r = requests.get('https://time-is-an-illusion.vishwactf.com/handle.php?key={}'.format(''.join(key)))
+        t2 = int(time.time_ns())
+        if t2 - t1 > (i + 1) * 1000000000:
+            break
+print('Key: {}'.format(''.join(key)))
+print('Flag: {}'.format(r.content))
+Key: KuKa9
+Flag: b'vishwaCTF{PhP_h@$_iTs_0wN_PErK$}'
+vishwaCTF{PhP_h@$_iTs_0wN_PErK$}
+
+♦→Reverse Engineering
+
+→Apollo 11
+directly using grep worked and got flag
+vishwaCTF{f1Ag_1s_r0t4tEd_By_!3}
+
+→Rotation
+By using gdb debugging the prohram in the main function
+Set a breaakpoint at cmp statement and check to which it is compared
+string:JIHGFEDCBAAAAAA
+by enting this we he a encrypted flag ivfujnPGS{s1Nt_1f_e0g4gRq_Ol_!3}
+By analysing the cipher seems to be rot13 and even challange name indacates it so udet rot 10 amnd got the flag vishwaCTF{f1Ag_1s_r0t4tEd_By_!3}
+
+→Misleading Steps:
+by opeing that file in r2 and gdb it is found that characters are moved to offset from 0xb0 to -0xc joining and printing all characters we got flag vishwaCTF{UmM_w3iRDooo0_1_Am_th3_r34l_0n3}
+
+→Facile
+as it is compressed file binwalk we get zip, doing strings on the file which we got and greping the file we can get flag vishwaCTF{r3v_1t_1s5s5s}
+
+→Give it to get it
+by seeing the challange vishwaCTF{f14g_1s_Wh3r3_Th3_h3aRt_L1Es}
+thought to chabge to different encryption like base64, base32...finally hex worked
+7669736877614354467b663134675f31735f57683372335f5468335f68336152745f4c3145737d7d
+
+→Suisse
+when opened the elf in IDA,Inside _flag(void),we find some characters, Using the hint in description and subtracting each character by 3 and concatenating them, we obtain the flag
+print("".join(chr(ord(i)-3) for i in “oXkQq]4v8hfXUh”)) in python we get
+flag vishwaCTF{lUhNnZ1s5ecURe}
+
+♦→Networking
+
+→Commenting is the key
+in that pcap file normally analysing all packets using wireshark i found in 5th packet the flag vishwaCTF{packets_are_editable}
+
+→Invalid
+wrong credentials we can find credentials in either udp or dns or http so we found some data like
+Frame 349: 377 bytes on wire (3016 bits), 377 bytes captured (3016 bits)
+Interface id: 0 (unknown)
+Encapsulation type: Ethernet (1)
+Arrival Time: Jul 4, 2005 15:14: 28 . 180956000 IST
+[Time shift for this packet : 0.000000000 seconds]
+Epoch Time: 1120470268. 180956000 seconds
+[Time delta from previous captured frame: 0. 052780090 seconds]
+[Time delta from previous displayed frame: 0.052780000 seconds]
+[Time since reference or first frame: 727 . 341644000 seconds]
+Frame Number : 349
+Frame Length: 377 bytes (3016 bits)
+Capture Length: 377 bytes (3016 bits)
+[Frame is marked: False]
+[Frame is ignored: False]
+Protocols in frame: eth: ethertype : ip : udp: sip]
+Coloring Rule Name: UDP]
+Coloring Rule String: udp]
+seems to make some sense and used that ip address af flag
+vishwaCTF{212.242.33.35}
