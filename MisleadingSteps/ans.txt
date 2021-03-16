@@ -1,0 +1,6 @@
+many people will do a strings on the binary and see a misleading flag.
+the file needs to be opened in ghidra.
+and the disassembly will show that all the letters of the flag have been hidden in the array.
+They're in hex.
+So everyone needs to put the hex values into the hex to ascii converter online and get the correct flag.
+vishwaCTF{UmM_w3iRDooo0_1_Am_th3_r34l_0n3}
