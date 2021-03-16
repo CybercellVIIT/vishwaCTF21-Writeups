@@ -1,5 +1,7 @@
 ## Flag format
 
+Author : <a href="https://github.com/Equinox21040">Vivek Shinde</a>
+
 Title : Weird Message
 
 Category : Cryptography
@@ -17,5 +19,3 @@ Files : message.txt
 Hints : None
 
 Solves : 62
-
-Author : <a href="https://github.com/Equinox21040">Vivek Shinde</a>
