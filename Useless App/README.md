@@ -1,5 +1,8 @@
 # Useless-App
-Title - Useless App
+
+Author : <a href="https://github.com/anilChouhan-sh">Anil Chouhan</a>
+
+Title : Useless App
 
 Category : Reverse Engineering
 
