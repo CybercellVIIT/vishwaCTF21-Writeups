@@ -6,7 +6,7 @@ We feel that we should always learn from the best, that is why we thought of col
 
 The Google Drive Link for Winner's Writeups so that all files are easily viewable : <a href="https://drive.google.com/drive/folders/1nBDJvZvEyRGSZsuBzLBpuOieGnCuvrtQ?usp=sharing">Winner Writeups Google Drive</a>
 
-### Best Writeup Overall : <b>MadrHacks</b>
+### Best Writeup Overall : <a href="https://drive.google.com/file/d/11EqHdQ433TrXi9PnUFdpcVjQSj0pT4re/view?usp=sharing">MadrHacks</a>
 
 ### Best Writeups viewable on Google Drive :- 
 1. <a href="https://drive.google.com/file/d/11EqHdQ433TrXi9PnUFdpcVjQSj0pT4re/view?usp=sharing">MadrHacks</a>
