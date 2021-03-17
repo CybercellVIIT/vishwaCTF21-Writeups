@@ -39,3 +39,5 @@ The Google Drive Link for Winner's Writeups so that all files are easily viewabl
 17023.000
 
 Points as shown at:   https://ctftime.org/event/1286
+
+Note : No. 6 Team hackalamiamiam has been waived from submitting the WriteUps as they are already doing good work for the community by donating their prize amount to an NGO. Thank you Team hackalamiamiam for the HeartWarming Gesture.💖
