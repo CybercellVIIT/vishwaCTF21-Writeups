@@ -31,7 +31,7 @@ The Google Drive Link for Winner's Writeups so that all files are easily viewabl
 18019.000
 7. Kali Billi  
 18019.000
-8. rock
+8. rock     
 17531.000
 9. Zh3r0_0ffici4l  
 17519.000
