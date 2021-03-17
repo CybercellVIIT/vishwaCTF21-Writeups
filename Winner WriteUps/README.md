@@ -6,7 +6,17 @@ We feel that we should always learn from the best, that is why we thought of col
 
 The Google Drive Link for Winner's Writeups so that all files are easily viewable : <a href="https://drive.google.com/drive/folders/1nBDJvZvEyRGSZsuBzLBpuOieGnCuvrtQ?usp=sharing">Winner Writeups Google Drive</a>
 
-The rankings of all the teams are as follows :- 
+### Best Writeup Overall : <b>MadrHacks</b>
+
+### Best Writeups viewable on Google Drive :- 
+1. <a href="https://drive.google.com/file/d/11EqHdQ433TrXi9PnUFdpcVjQSj0pT4re/view?usp=sharing">MadrHacks</a>
+2. <a href="https://drive.google.com/file/d/1FpAo9HWamwROCM8br8orHItpauE8ez3Y/view?usp=sharing">Kali Billi</a>
+
+### Best Writeups viewable from Github :- 
+1. <a href="https://github.com/CybercellVIIT/vishwaCTF21-Writeups/blob/main/Winner%20WriteUps/04.%20noob-atbash.md">noob-atbash</a>
+2. <a href="https://github.com/CybercellVIIT/vishwaCTF21-Writeups/blob/main/Winner%20WriteUps/05.%205lyth3r1n.md">5lyth3r1n</a>
+
+### The rankings of all the teams are as follows :- 
 1. MadrHacks  
 19819.000
 2. DarkArmy  
