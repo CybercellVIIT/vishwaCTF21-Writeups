@@ -1,3 +1,5 @@
+<img src="https://github.com/CybercellVIIT/vishwaCTFWebsite21/blob/master/vishwa1.png">
+
 # vishwaCTF21-Writeups
 Github Repository for Writeups of vishwaCTF'21 Challenges<br>
 This is the Repository made for uploading all solutions and writeups of challenges in vishwaCTF'21 for public reference.Everyone is invited to make their contributions here after reading the instructions below. (Note: Instructions are a bit different from the vishwaCTF-Mini'21 writeup's, so all CyberCell members also should read them once.)
