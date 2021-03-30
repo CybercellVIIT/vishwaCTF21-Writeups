@@ -28,7 +28,7 @@ exact location of where the bit was manipulated. This is the basic concept used 
 correcting the single bit error and removing the parity bits. The binary message would output the flag for this question.
 
 
-Data              corrected msg     Msg with incorrect bit                  
+Data                   corrected msg             Msg with incorrect bit                  
 
 00110111     <-   000101100111  <- 001101100111 <br> 
 01101000     <-   010011011000  <- 010010011000  <br>
