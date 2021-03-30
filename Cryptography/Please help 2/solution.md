@@ -6,9 +6,13 @@ the data bits. For this question i used a variation of the (15,11) hamming code.
 
 Step 1 ->  Put the 16bit data into a 4 x 4 table. Lets use 0011101100101011. Start from the top left and go to the right and fill the table as shown.
 
-|--|--|--|--|
+|0 |0 |1 |1| <br>
+|1 |0 |1 |1| <br>
+|0 |0 |1 |0| <br>
+|1 |0 |1 |1| <br>
 
-|0 |0 |1 |1|
-|1 |0 |1 |1|
-|0 |0 |1 |0|
-|1 |0 |1 |1|
+
+|0  |1  |2  |3 | <br>
+|4  |5  |6  |7 | <br>
+|8  |9  |10 |11| <br>
+|12 |13 |14 |15| <br>
