@@ -1,4 +1,4 @@
-##Solution
+## Solution
 
 This question is very similar to the previous question,"please help!!" This question requires you to solve the previous question as it uses the same methodology i.r. hamming codes. 
 The question contains binary grouped in 16bit. To decrypt the flag, we have to find a hamming code with 16bits. Also it was not enough to know the parity bits but also how they checked
@@ -54,3 +54,5 @@ After removing the parity bits, the 11 bits of correct data are -> 0011010011. D
 14. 00011001101 <-  1000000101001101   <- 1000001101001101 <br>
 15. 10111000110 <-  0001101111000110   <- 0001101011000110 <br>
 16. 11100100001 <-  1101111000100001   <- 1101111000101001 <br>
+
+If you still have some doubts refer to this [video](https://www.youtube.com/watch?v=X8jsijhllIA)
