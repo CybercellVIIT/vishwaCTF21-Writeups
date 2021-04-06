@@ -1,4 +1,4 @@
-##Solution
+## Solution
 
 As the description suggests, this question had stated distortion created due to noise. This was meant to lead the player in the direction of bit correction. One of the popular single 
 bit correction methods is the use of parity bits as shown in the hamming code methodology. If you observe the binary digits, they are in groups of 12 which commonly means
@@ -43,3 +43,5 @@ Data          <-         corrected msg      <- Msg with incorrect bit
 01100110     <-   010011000110  <- 010011000100<br>
 01010101     <-   000110100101  <- 001110100101<br>
 01101110     <-   110011011110  <- 110011011111 <br>
+
+If you are havning any doubt refer to this [website](http://users.cs.fiu.edu/~downeyt/cop3402/hamming.html)
